@@ -11,4 +11,4 @@ The book I use is：《Introduction to Machine Learning with Python》
 前路未定，一切皆有可能！    
 凛冬散尽，星河长明    
 
-I need to stick with the update.
+Learning requires constant persistence and turning it into a habit!
