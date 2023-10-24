@@ -18,8 +18,7 @@
 mglearn.plots.plot_scaling()
 ```
 
-![output](C:\Users\34629\Desktop\output.png)
-
+![Alt text](output-1.png)
 
 
 ## 数据标准化 / 归一化的作用
@@ -64,11 +63,8 @@ nor = Normalizer().fit_transform(x)
 print("StandardScaler:\n {}".format(nor))
 ```
 
-![image-20231024113213754](C:\Users\34629\AppData\Roaming\Typora\typora-user-images\image-20231024113213754.png)
-
-![image-20231024113239140](C:\Users\34629\AppData\Roaming\Typora\typora-user-images\image-20231024113239140.png)
-
-
+![Alt text](1.png)
+![Alt text](2.png)
 
 
 
