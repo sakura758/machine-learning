@@ -18,7 +18,7 @@
 mglearn.plots.plot_scaling()
 ```
 
-![Alt text](output-1.png)
+![Alt text](output.png)
 
 
 ## 数据标准化 / 归一化的作用
