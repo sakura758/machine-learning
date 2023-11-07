@@ -1,0 +1,15 @@
+非负矩阵分解
+from sklearn.decomposition import NMF
+
+t-SNE 流行学习
+from sklearn.manifold import TSNE
+
+pca主成分分析
+from sklearn.decomposition import PCA
+
+
+k均值聚类
+from sklearn.cluster import KMeans
+
+凝聚聚类
+from sklearn.cluster import AgglomerativeClustering

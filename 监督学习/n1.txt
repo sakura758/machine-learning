@@ -1,0 +1,43 @@
+scikit-learn的决策树在DecisionTreeRegressor 类和DecisionTreeClassifier 类中实现
+from sklearn.tree import DecisionTreeClassifier
+
+线性模型
+
+回归：
+最小二乘
+from sklearn.linear_model import LinearRegression
+岭回归
+from sklearn.linear_model import Ridge
+lasso
+from sklearn.linear_model import Lasso
+
+分类：
+两种线性分类算法是Logistic 回归(ogistic regression)和线性支持向量机 (linearsupport vector machine，线性SVM)
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
+
+决策树集成：
+随机森林
+from sklearn.ensemble import RandomForestClassifier
+梯度提升回归树
+from sklearn.ensemble import GradientBoostingClassifier
+
+
+素贝叶斯模型 (MultinomialNB和GaussianNB)计算的统计数据类型略有不同MultinomialNB计算每个类别中每个特征的平均值，而 GaussianNB 会保存每个类别中每个特征的平均值和标准差
+要想做出预测，需要将数据点与每个类别的统计数据进行比较，并将最匹配的类别作为预测结果。
+
+
+神经网络
+from sklearn.neural_network import MLPClassifier
+
+
+
+支持向量机
+from sklearn.svm import LinearSVC
+
+
+
+
+k近邻
+from sklearn.neighbors import KNeighborsClassifier 分类
+from sklearn.neighbors import KNeighborsRegressor  回归
