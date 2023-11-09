@@ -13,3 +13,7 @@ from sklearn.cluster import KMeans
 
 凝聚聚类
 from sklearn.cluster import AgglomerativeClustering
+
+DBSCAN
+具有噪声的基于密度的空间聚类应用
+from sklearn.cluster import DBSCAN
