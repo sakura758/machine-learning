@@ -1,0 +1,58 @@
+k折交叉验证
+from sklearn.model_selection import cross_val_score
+
+
+
+
+分层k折交叉验证
+from sklearn.model_selection import KFold
+
+
+
+
+留一法交叉验证
+from sklearn.model_selection import LeaveOneOut
+
+
+
+
+打乱划分交叉验证
+from sklearn.model_selection import ShuffleSplit
+ 
+
+
+
+分组交叉验证
+from sklearn.model_selection import GroupKFold
+ 
+ 
+ 
+ 
+带交叉验证的网格搜索
+from sklearn.model_selection import GridSearchCV
+
+
+
+
+分层划分
+from sklearn.model_selection import  StratifiedKFold
+StratifiedKFold函数采用分层划分的方法（分层随机抽样思想），验证集中不同类别占比与原始样本的比例保持一致，故StratifiedKFold在做划分的时候需要传入标签特征。
+
+
+
+
+
+参数网格
+from sklearn.model_selection import ParameterGrid
+
+ParameterGrid 是 scikit-learn 库中的一个工具类，用于生成超参数网格的所有可能组合。在机器学习中，超参数是在训练模型之前需要手动设置的参数，而不是从数据中学到的。ParameterGrid 的作用是帮助系统地尝试超参数的各种组合，以便进行模型选择和调优。
+与 GridSearchCV 或 RandomizedSearchCV 配合使用：
+from sklearn.model_selection import GridSearchCV
+from sklearn.svm import SVC
+
+param_grid = {'C': [1, 10, 100], 'kernel': ['linear', 'rbf']}
+grid = ParameterGrid(param_grid)
+
+svc = SVC()
+grid_search = GridSearchCV(svc, param_grid=grid, cv=3)
+grid_search.fit(X, y)

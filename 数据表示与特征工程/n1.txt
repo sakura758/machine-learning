@@ -1,0 +1,16 @@
+独热编码（OneHotEncoder）
+from sklearn.preprocessing import OneHotEncoder
+
+多项式特征
+from sklearn.preprocessing import PolynomialFeatures
+
+单变量特征选择
+from sklearn.feature_selection import SelectPercentile
+最简单的是 SelectKBest和SelectPercentle，前者选择固定数量的k个特征，后者选择固定百分比的特征
+
+基于模型的特征选择
+from sklearn.feature_selection import SelectFromModel
+
+
+迭代特征选择
+from sklearn.feature_selection import RFE
