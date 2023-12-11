@@ -1,6 +1,5 @@
-k折交叉验证
+交叉验证
 from sklearn.model_selection import cross_val_score
-
 
 
 
@@ -56,3 +55,22 @@ grid = ParameterGrid(param_grid)
 svc = SVC()
 grid_search = GridSearchCV(svc, param_grid=grid, cv=3)
 grid_search.fit(X, y)
+
+
+
+用作与其他更复杂的分类器进行比较的简单基线的分类器
+from sklearn.dummy import DummyClassifier
+
+
+混淆矩阵
+from sklearn.metrics import confusion_matrix
+
+
+
+f分数
+from sklearn.metrics import f1_score
+
+
+
+准确率、召回率和f分数做一个全面的总结
+from sklearn.metrics import classification_report
