@@ -74,3 +74,12 @@ from sklearn.metrics import f1_score
 
 准确率、召回率和f分数做一个全面的总结
 from sklearn.metrics import classification_report
+
+
+准确率-召回率曲线
+from sklearn.metrics import prectsion_recall_curve 
+
+
+
+平均准确率
+from sklearn.metrics import average_precision_score
