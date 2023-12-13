@@ -83,3 +83,11 @@ from sklearn.metrics import prectsion_recall_curve
 
 平均准确率
 from sklearn.metrics import average_precision_score
+
+
+计算ROC曲线
+from sklearn.metrics import roc_curve
+
+
+计算ROC 曲线下的面积
+from sklearn.metrics import roc_auc_score
