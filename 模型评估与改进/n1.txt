@@ -91,3 +91,9 @@ from sklearn.metrics import roc_curve
 
 计算ROC 曲线下的面积
 from sklearn.metrics import roc_auc_score
+
+
+
+
+查看metrics._scorer模块中定义的SCORER字典
+from sklearn.metrics._scorer import SCORERS
