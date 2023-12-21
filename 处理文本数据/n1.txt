@@ -1,0 +1,14 @@
+停用词
+from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
+
+
+词袋
+from sklearn.feature_extraction.text import CountVectorizer
+
+
+tf-idf数据缩放
+from sklearn.feature_extraction.text import TfidfVectorizer, TfidfTransformer
+
+
+多个文本文件处理
+from sklearn.datasets import load_files
