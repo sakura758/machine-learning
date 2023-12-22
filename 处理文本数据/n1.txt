@@ -12,3 +12,18 @@ from sklearn.feature_extraction.text import TfidfVectorizer, TfidfTransformer
 
 多个文本文件处理
 from sklearn.datasets import load_files
+
+
+词干提取方法(Porter词干提取器，一种广泛使用的启发法集合，从nltk 包导入)
+import nltk
+另一种 import spacy 
+
+
+分层 ShuffleSplit 交叉验证器
+from sklearn.model_selection import StratifiedShuffleSplit
+提供训练/测试索引，用于拆分训练/测试集中的数据。
+此交叉验证对象是 StratifiedKFold 和 ShuffleSplit，返回分层的随机折叠。褶皱 通过保留每个类别的样本百分比来制作。
+
+
+隐含狄利克雷分布
+from sklearn.decomposition import LatentDirichletAllocation
